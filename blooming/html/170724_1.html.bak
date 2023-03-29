@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <meta charset="UTF-8">
+  <title>Document</title>
+ </head>
+ <body>
+  <h1>h1입니다.</h1><br/>
+  <h2>h2입니다.</h2><br/>
+  <h3>h3입니다.</h3><br/>
+  <h4>h4입니다.</h4><br/>
+  <h5>h5입니다.</h5><br/>
+  <h6>h6입니다.</h6><br/>
+
+  <font color=red size=5 color=#238e23><i><b><u>글자입니다.</u></b></i></font><br/>
+  <sup>윗첨자</br>
+  <sub>아랫첨자</sub>
+
+  <p>p태그입니다.</p>
+  <p>p태그입니다.</p>
+  <p>p태그입니다.</p>
+  <p>p태그입니다.</p>
+  br입니다.</br>
+  </br>
+  <hr align=right>
+
+  <hr width = 70% size=10 color=red align=right noshade>
+
+  자연을 벗삼아 휴식을 취하고 아름다운 추억을 카메라에 담아본다.
+  <br/><br/><br/><br/><br/><br/>
+
+  소유한 자동차</br>
+  <ol type="a"> <!-- type =a/A/i/I --> <!-- ol start=10 -->
+	<li>벤츠</li>
+	<li>티볼리</li>
+	<li>아우디</li>
+	<li>람보르기니</li>
+	<li>페라리</li>
+ </ol>
+ <ul> <!--type=square, circle, disc -->
+	<li>벤츠</li>
+	<li>티볼리</li>
+	<li>아우디</li>
+	<li>람보르기니</li>
+	<li>페라리</li>
+ </ul>
+ <hr width = 70% size=10 color=red align=right noshade>
+ <img src="img/ka_1.jpg">라이언</img> <!-- ../는 한단계위 -->
+ <img src="img/ka_1.jpg" title="라이언그림" width=500 height=500 border=5></img>
+ <!-- <table>--<tr>행시작--<td>데이터삽입  위아래합친거 rowspan=2 가로합친거 colspan=2-->
+
+ <table border=3  bordercolor=red width=500 height=300 align="center" cellpadding=3 cellspacing=0>
+	<tr align="center"valign="top" bgcolor="#444444">
+		<td>1</td>
+		<td colspan=2>2</td>
+	</tr>
+	<tr align="center" valign="middle" bgcolor="#ffff00">
+		<td>3</td>
+		<td>4</td>
+		<td rowspan=2>5</td>
+	</tr>
+	<tr align="center" valign="bottom" bgcolor="orange">
+		<td>6</td>
+		<td>7</td>
+	</tr>
+ </table>
+
+
+ </body>
+</html>

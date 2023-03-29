@@ -1,0 +1,15 @@
+<meta charset="utf-8">
+<?php
+include "db_information.php";
+
+$a = $_POST['name'];
+$b = $_POST['email'];
+$c = $_POST['pass'];
+$d = $_POST['title'];
+$e = $_POST['comment'];
+$ip = $_SERVER['REMOTE_ADDR']; //ip
+
+$query="insert into board values('','$a','$b','$c','$d','$e','$ip',now(),0)";
+mysql_query($query	,$conn);
+echo "<script> alert('등록완료되었습니다.')</script> <meta http-equiv='Refresh' content='1 URL=list.php'>";
+?>

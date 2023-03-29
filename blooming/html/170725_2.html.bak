@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+ </head>
+ <style type="text/css">
+ body{background-color:#eeeeee;}
+ .bb{border-width:2px; border-style:solid; }
+ .da{border-width:1px; border-style:solid; border-color:#bbbbbb; }
+ .ia{border-width:0px;}
+ .db0{width:30%; height:50%; background-color:#eeeeee; width:30%; height:50%;}
+ .db{border-width:1px; border-style:solid; border-top-color:#bbbbbb; border-bottom-color:#eeeeee; border-left-color:#bbbbbb; border-right-color:#bbbbbb; background-color:white; width:30%; height:50%;}
+ .dd{border-width:1px; border-style:solid; border-top-color:#bbbbbb; border-bottom-color:#bbbbbb; border-left-color:#bbbbbb; border-right-color:#bbbbbb; background-color:white; width:30%; height:50%;}
+ .db2{border-width:1px; border-style:solid; border-top-color:#bbbbbb; border-bottom-color:#eeeeee; border-left-color:#bbbbbb; border-right-color:#bbbbbb; background-color:white; width:60%; height:50%; display:inline;}
+ .bbd{border-width:0px; background-color:#eeeeee; display:inline;}
+ a{color:#aaaaaa;  }
+ .bu{background-color:white; border-width:1px; border-style:solid; border-color:#bbbbbb; font-family:돋움; font-size:9pt; color:#333333;}
+ .fb{font-weight:bold;}
+ </style>
+ <body>
+ <div align="center"><img src="img/네이버.png" ></img><br/>
+
+	<div align="center" class=db><input class=ia type=text placeholder="아이디" maxlength=20 style="width:280px; height:40px;"><a>  @naver.com</a></div>
+	<div align="center" class=db><input class=ia type=text placeholder="비밀번호" maxlength=20  style="width:300px; height:40px;"><img src="img/잠금.png" valign="bottom"></img></div>
+	<div align="center" class=dd><input class=ia type=text placeholder="비밀번호 재확인" maxlength=20 style="width:300px; height:40px;"><img src="img/체크.png" valign="bottom"></img></div><br/>
+
+	<div align="center" class=db><input class=ia type=text placeholder="이름" maxlength=40 style="width:380px; height:40px;"></div>
+	<div align="center" class=db><p/><input class=bu type=button value="남자" style="width:190px; height:37px;"> <input class=bu type=button value="여자" style="width:190px; height:37px;"></div>
+	<div align="center" class=db><div class=bbd ><a>생일</a></div><div class=db2>
+	<input class=ia type=text placeholder="년(4자)" maxlength=4 style="width:150px; height:40px;">
+	<select name="월" style="width:80px; height:37px;">
+		<option class=fb value="월"><b>월</b></option>
+		<option value="1">1월</option>
+		<option value="1">2월</option>
+		<option value="1">3월</option>
+		<option value="1">4월</option>
+		<option value="1">5월</option>
+		<option value="1">6월</option>
+		<option value="1">7월</option>
+		<option value="1">8월</option>
+		<option value="1">9월</option>
+		<option value="1">10월</option>
+		<option value="1">11월</option>
+		<option value="1">12월</option></select></div>
+		<input class=ia type=text placeholder="일" maxlength=2 style="width:100px; height:40px;"></div>
+	<div align="center" class=dd><input class=ia type=text placeholder="본인확인 이메일(선택)" style="width:380px; height:40px;"></div><br/>
+
+	<div align="center" class=db><select name="전화번호" style="width:100px; height:35px;">
+	<option value="02">+82</option></select> <input class=ia type=text placeholder="휴대전화번호" maxlength=20 style="width:180px; height:40px;">  <input class=bu type=button value="인증" style="width:100px; height:35px;"></div>
+	<div align="center" class=dd><input class=ia type=text placeholder="인증번호" style="width:285px; height:40px;">   <input class=bu type=button value="확인" style="width:100px; height:35px;"></div><br/>
+	</div>
+ </body>
+</html>

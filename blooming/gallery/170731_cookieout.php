@@ -1,0 +1,5 @@
+<?php
+setcookie("userid");
+?>
+<meta charset="utf-8">
+로그아웃하였습니다.

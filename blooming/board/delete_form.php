@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<style type="text/css">
+.fb{color:white; font-weight:bold; background-color:#360033}
+</style>
+<?php
+include "db_information.php";
+$deli=$_GET['id'];
+$query="select * from board where id=".$deli;
+$result=mysql_query($query,$conn);
+$re = mysql_fetch_row($result);
+
+?>
+<center>
+<form method=post action='delete.php?del=<?php echo $re[0]?>'>
+  <table border="1" cellpadding="1" cellspacing="0">
+    <tr align=center>
+		<td class=fb bgcolor="#360033" width=500px height=26px>비밀번호를 입력하세요.</td>
+    </tr>
+	<tr align = center height=50px>
+		<td><input type=text name="delete" value=''></td>
+	</tr>
+	<tr align=center>
+		<td height=30px><input type=submit name="go" value='확인'></td>
+	</tr>
+</table>
+</form>
+</center>

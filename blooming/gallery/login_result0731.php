@@ -1,0 +1,9 @@
+<?php
+$id = $_POST['member_id'];
+$pass = $_POST['member_password'];
+if(($id=="a") && ($pass=="b")){
+	setCookie("userid",$id);
+	echo "<meta charset='UTF-8'>";
+	echo $id."님 안녕하세요";
+}
+?>

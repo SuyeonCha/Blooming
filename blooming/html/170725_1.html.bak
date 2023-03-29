@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <style type="text/css">
+  body{font-size:9pt; color:#333333; font-family:돋움; }
+  table{background-color:#11ff55; background-image:url(img/img3.png)}
+
+  a:link{ text-decoration:line-through; color:#333333; font-family:돋움; font-size:9pt;}
+  a:visited{text-decoration:none; color:#333333; font-family:돋움; font-size:9pt;}
+  a:hover{text-decoration:underline; color:#ff0000; font-family:돋움; font-size:9pt;}
+  a:active{text-decoration:underline; color:#ffff00; font-family:돋움; font-size:9pt;}
+
+  h1{font-family:돋움; color:#238e23; font-size:9pt; background-color:red}
+  h2{font-style:italic; color:red; font-size:20pt; line-height:150%;}
+  h3{font-weight:bold; color:purple; font-family:휴먼옛체; letter-spacing:5px;}
+  
+  .a{color:red;}
+  .b{color:yellow;}
+  .c{color:green;}
+
+  .tid{background-color:#ff33ff; font-size:15pt; color:orange; font-weight:bold;}
+  .tpass{background-image:url(img/img3.jpg); font-size:9pt; color:#333333	; font-style:italic;}
+  .login{background-color:yellow; color:red; font-weight:bold; width:70%; height:30%;}
+  .reset{background-color:yellow; font-weight:bold; width:50%; height:30%;}
+
+  table{border-width:5px; border-style:soild; border-top-color:#ff0000; border-left-color:#ffff00; border-right-color:#0000ff; border-right-color:#ffffff}
+  .tt{background-color:#94acaa;  border-width:0px;}
+  </style>
+  <title>Document</title>
+ </head>
+ <body>
+  <h1> h1태그입니다.</h1>
+  <h2> h2태그입니다.</h2>
+  <h3> h3태그입니다.</h3>
+  <a href="http://www.daum.net">다음</a>  <a href="http://www.naver.com">네이버</a>
+
+  <br/><br/>
+
+  <table border=1 cellspacing=0>
+	<tr align="center">
+		<th class=tid>ID</th>
+		<td><input class=tt type="text" name="id" value"" maxlength=12 required><br/>
+	</tr>
+	<tr align="center">
+		<th class=tpass>PassWord</th>
+		<td><input class=tt type=password name="pass" value="1234" maxlength=12></td>
+	</tr>
+	<tr align="center">
+		<td colspan=2><input class=login type=submit name="bt" value="로그인"> </td><br/>
+	</tr>
+</table>
+<hr>
+<p class=a> 테두리 일괄설정 </p>
+<p class=b> 아래쪽 테두리 설정 </p>
+<p class=c> 자연을 벗삼알 휴식을 취하고 </p>
+<p> 아름다운 추억을 기억에 담는다 </p>
+ </body>
+</html>

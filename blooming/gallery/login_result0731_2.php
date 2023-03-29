@@ -1,0 +1,10 @@
+<?php
+$id = $_POST['member_id'];
+$pass = $_POST['member_password'];
+if(($id=="a") && ($pass=="b")){
+	session_start(); //세션 선언
+	$_SESSION['userid'] = $id; //세션 등록
+	echo "<meta charset='utf-8'>";
+	echo $id."님 hi";
+}
+?>

@@ -1,0 +1,100 @@
+<meta charset="UTF-8">
+
+<fieldset>
+<form > <!--required 알림창뜸-->
+<legend>로그인 화면</legend>
+id:<input type=text name="user_id" value="" maxlength=12 required><br/>
+pass:<input type=password name="pass" value="1234" maxlength=12><br/><br/>
+<input type=submit name="bt" value="로그인">
+<input type=reset name="reset" value="재작성"><br/>
+<hr>
+<h1>좋아하는 동물을 고르시오.</h1>
+<input type=checkbox name="animal_1">고양이   <input type=radio>캥거루<br/>
+<input type=checkbox name="animal_2">강아지   <input type=radio>고릴라<br/>
+<input type=checkbox name="animal_3">여우     <input type=radio>햄스터<br/>
+<input type=checkbox name="animal_4">돼지     <input type=radio>나무늘보<br/>
+<hr>
+<select name="취미">
+	<option value="수영">수영</option>
+	<option value="테니스">테니스</option>
+	<option value="낚시">낚시</option>
+	<option value="영화감사">영화감상</option>
+	<option value="독서">독서</option>
+</select><br/><br/>
+<textarea rows= 10 cols=30>내용을 입력하세요</textarea>
+</form>
+</fieldset>
+<fieldset>
+<form >
+<legend>로그인 화면</legend>
+<table border=1 cellspacing=0>
+	<tr align="center">
+		<th>ID</th>
+		<td><input type="text" name="id" value"" maxlength=12 required><br/>
+	</tr>
+	<tr align="center">
+		<th>PassWord</th>
+		<td><input type=password name="pass" value="1234" maxlength=12></td>
+	</tr>
+	<tr align="center">
+		<td colspan=2><input type=submit name="bt" value="로그인"> <input type=reset name="reset" value="재작성"></td><br/>
+	</tr>
+</table>
+</form>
+</fieldset>
+<br/><br/>
+<fieldset>
+	<form method=post action=170726_log.php>
+	<legend>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○회원가입○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○</legend><br/>
+		<table width=880>
+			<tr align="left">
+				<td width=130 bgcolor="#964ace">*이름</td>
+				<td><input type=text name="na" value"" maxlength=10 ><input type=radio name="who" value="여자">여자  <input type=radio  name="who" value="남자">남자</td>
+				<td rowspan=11 valign="top" align="center" width=150><img src="img/img5.png"></img><br/><br/><input type=file value="사진등록"></td>
+			</tr>
+			<tr align="left">
+				<td bgcolor="#969af0">*생년월일</td>
+				<td><input type=text name="yyyy" value"" maxlength=4 > <input type=text name="m" value"" maxlength=2 size=5> <input type=text name="d" value"" maxlength=2 size=5><sub>ex)1996.10.25</sub></td>
+			</tr>
+			<tr align="left">
+				<td bgcolor="#964ace">*아이디</td>
+				<td><input type=text name="id" value"" maxlength=18>  <input type=button name="중복확인" value="*아이디중복확인"></td>
+			</tr>
+			<tr align="left">
+				<td bgcolor="#969af0">*Password</td>
+				<td><input type=password name="pass" value""></td>
+			</tr>
+			<tr>
+				<td bgcolor="#964ace">*재입력</td>
+				<td><input type=password name="비밀번호 재입력" value""></td>
+			</tr>
+			<tr>
+				<td bgcolor="#969af0">*e-mail입력</td>
+				<td><input type=text name="emid" value=""> @ <input type=text name="이메일주소" value=""> <select name="emju"><option name="naver" value="naver.com">naver.com</option><option name="daum" value="daum.net">daum.net</option><option name="gmail" value="gmail.com">gmail.com</option></select><br/><sub>ex)pen10@naver.com</sub></td>
+			</tr>
+			<tr>
+				<td bgcolor="#964ace">*핸드폰입력</td>
+				<td><select name="phone"><option value"010">010</option><option value"011">011</option><option value"019">019</option><option value"016">016</option></select> <input type=text name="phone2"value="" size=5> <input type=text name="phone3" value="" size=5></td>
+			</tr>
+			<tr>
+				<td bgcolor="#969af0">*전화번호</td>
+				<td><select name="numbers"><option value"02">02</option><option value"031">031</option><option value"032">032</option><option value"034">034</option></select> <input type=text name="numbers2" value="" size=5> <input type=text name="numbers3" value="" size=5></td>
+			</tr>
+			<tr>
+				<td bgcolor="#964ace">*우편번호</td>
+				<td><input type=text value="" size=6>  -  <input type=text value="" size=6>  <input type=button value="우편번호 검색"></td>
+			</tr>
+			<tr>
+				<td bgcolor="#969af0">*주소</td>
+				<td><input type=text name="address" value="" size=10><br/><input type=text name="address2"  value="">
+			</tr>
+			<tr>
+				<td align="right" >취미</td>
+				<td><input type=checkbox name="bt[]" value="잠자기">잠자기  <input type=checkbox name="bt[]" value="도자기">도자기  <input type=checkbox name="bt[]" value="자기">자기</td>
+			</tr>
+			<tr align="center">
+				<td colspan=2><input type=submit value="회원가입">   <input type=reset value="취소"></td>
+			</tr>
+		</table>
+	</form>
+</fieldset>

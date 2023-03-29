@@ -1,0 +1,13 @@
+<meta charset="utf-8">
+<?php
+include "db_information.php";
+
+$name = $_POST['name'];
+
+$a = $_FILES['userfile']['name'];
+$aa = $_FILES['userfile']['tmp_name'];
+$b = $_FILES['userfile']['type'];
+$c = $_FILES['userfile']['size'];
+
+echo $b;
+?>

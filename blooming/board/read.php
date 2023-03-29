@@ -1,0 +1,41 @@
+<meta charset="utf-8">
+<style type="text/css">
+.fb{color:white; font-weight:bold; background-color:#360033}
+.fb2{font-size:9pt;}
+table{align:center}
+</style>
+<?php
+  include "db_information.php";
+  $no=$_GET['aa'];
+  $query="select * from board where id=".$no;
+  //mysql_query("SELECT * FROM board WHERE id=$no", $conn);
+  $result=mysql_query($query,$conn);
+  $re=mysql_fetch_row($result);
+  $re[8]++;
+  mysql_query("update board set hit=$re[8] where id=$no", $conn);
+?>
+
+<center>
+  <table border="1" cellpadding="1" cellspacing="0">
+    <tr align=center>
+      <td class=fb colspan=4 bgcolor="#360033" width=500px><?php echo $re[4];?></td>
+    </tr>
+    <tr>
+      <td>글쓴이</td>
+      <td><?php echo $re[1];?></td>
+      <td>이메일</td>
+      <td><?php echo $re[2];?></td>
+    </tr>
+    <tr>
+      <td>날 짜</td>
+      <td><?php echo $re[7];?></td>
+      <td>조회수</td>
+      <td><?php echo $re[8];?></td>
+    </tr>
+    <tr align=center>
+      <td colspan="4"><?php echo $re[5];?></td>
+    </tr>
+   <tr align=center><td colspan=4><a href=list.php>목록보기</a> <a href="write.php?id=<?=$no?>">글쓰기</a> <a href="update_form.php?id=<?=$no?>">수정</a> <a href="delete_form.php?id=<?=$no?>">삭제</a></td></tr>
+  </table>
+   
+</center>

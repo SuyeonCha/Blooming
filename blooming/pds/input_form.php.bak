@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<style>
+.hi {border:2px solid black; width:400px; height:100px;}
+.hi2 {border:2px solid black; width:400px; height:290px; border-top-width:0px}
+</style>
+<form ENCTYPE="multipart/form-data" method=post action="input_result.php">
+<center>
+<div class=hi>
+<table align=center valign=center>
+<tr>
+	<td align=right>이름</td><td><input type=text name='name' value=''></td>
+</tr>
+<tr>
+	<td align=right>비밀번호</td><td> <input type=passwd name='pass' value=''></td>
+</tr>
+<tr>
+	<td align=right>제목 </td><td><input type=text name='title' value=''></td>
+</tr>
+</table>
+</div>
+<div class=hi2>
+<textarea name="comment" value="" cols=54 rows=19></textarea>
+</div>
+<div align=center><input type=file name='ufile' value="사진등록"></div>
+<div align=center><input type=submit name="go" value="등록"> <input type=submit name="cancle" value="취소"></div>
+</form>
+</center>
